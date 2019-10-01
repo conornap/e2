@@ -21,9 +21,9 @@
 
     <h2>Results</h2>
     <ul>
-        <li>Player A rolled a $<?php echo $rollA; ?></li>
-        <li>Player B rolled a $<?php echo $rollB; ?></li>
-        <li>$<?php echo $winner; ?></li>
+        <li>Player A rolled a <?php echo $rollA; ?></li>
+        <li>Player B rolled a <?php echo $rollB; ?></li>
+        <li><?php echo $winner; ?></li>
     </ul>
 
 </body>

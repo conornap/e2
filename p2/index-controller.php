@@ -11,19 +11,20 @@
 
 $winner = null;
 
-// "Roll" a number betweeen 1 and 6
-$dice = rand(1,6);
+// each player "rolls" a number betweeen 1 and 6
+$diceA = rand(1,6);
+$diceB = rand(1,6);
 
 // Determine the players scores
-$rollA = $dice;
-$rollB = $dice;
+$rollA = $diceA;
+$rollB = $diceB;
 
 // Determine the winner or declare a tie, based on the players rolls
-if ($rollA == $rollB) {
+if ($rollA < $rollB) {
     $winner = 'Player A Wins!';
 } elseif ($rollA > $rollB) {
     $winner = 'Player B Wins!';
-} elseif ($rollA < $rollB) {
+} elseif ($rollA == $rollB) {
     $winner = 'Tie Game!';
 }
 

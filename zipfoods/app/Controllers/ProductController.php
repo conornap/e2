@@ -7,20 +7,20 @@ class ProductController extends Controller
 {
     private $products;
 
-    public function __construct()
-    (
-        parent::__construct();
+    public function __construct($app)
+    {
+        parent::__construct($app);
 
-        $this->products = new Products($this->app->path'database/products.json');
-    )
+        $this->products = new Products($this->app->path('database/products.json'));
+    }
 
     public function index()
     {
         return $this->app->view('products.index', [
-        'products' => $products->getAll()]);
+        'products' => $this->products->getAll()]);
     }
 
-    public function show();
+    public function show()
     {
         $id = $this->app->param('id');
 

@@ -1,7 +1,7 @@
 @extends('templates.master')
 
 @section('title')
-  Product {{ $id }} not found
+  Product {{$id}} not found
 @endsection
 
 @section('content')

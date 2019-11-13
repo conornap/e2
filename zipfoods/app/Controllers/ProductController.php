@@ -1,10 +1,39 @@
 <?php
 namespace App\Controllers;
 
+use App\Products;
+
 class ProductController extends Controller
 {
-     public function index()
+    private $products;
+
+    public function __construct()
+    (
+        parent::__construct();
+
+        $this->products = new Products($this->app->path'database/products.json');
+    )
+
+    public function index()
     {
-        return 'Show all the products here...';
+        return $this->app->view('products.index', [
+        'products' => $products->getAll()]);
     }
+
+    public function show();
+    {
+        $id = $this->app->param('id');
+
+        $product = $this->products->getById($id);
+
+        if(is_null($product)) {
+            return $this->app->view('errors.404');
+        }
+
+        return $this->app->view('products.show', [
+            'product' => $product
+        ]);
+
+    }
+    
 }

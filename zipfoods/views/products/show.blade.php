@@ -1,11 +1,10 @@
 @extends('templates.master')
 
 @section('title')
-  
+    {{ $product['name'] }}
 @endsection
 
 @section('content')
-    
 <div id='product-show'>
     <h2>{{ $product['name'] }}</h2>
 
@@ -19,5 +18,4 @@
 </div>
 
 <a href='/products'>&larr; Return to all products</a>
-
 @endsection

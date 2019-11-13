@@ -17,23 +17,29 @@ class ProductController extends Controller
     public function index()
     {
         return $this->app->view('products.index', [
-        'products' => $this->products->getAll()]);
+        'products' => $this->products->getAll()
+        ]);
     }
 
     public function show()
     {
-        $id = $this->app->param('id');
+       $id = $this->app->param('id');
 
-        $product = $this->products->getById($id);
+       $product = $this->products->getById($id);
 
-        if(is_null($product)) {
-            return $this->app->view('errors.404');
-        }
+       if (is_null($product)) {
+        return $this->app->view('products.missing');
+    }
 
-        return $this->app->view('products.show', [
-            'product' => $product
-        ]);
+    return $this->app->view('products.show', [
+        'product' => $product
+    ]);
 
     }
-    
+    public function missing()
+    {
+       $id = $this->app->param('id');
+
+    }
+
 }

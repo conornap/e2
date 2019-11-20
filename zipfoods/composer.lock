@@ -685,16 +685,16 @@
         },
         {
             "name": "susanbuck/e2core",
-            "version": "0.1.5",
+            "version": "0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/susanBuck/e2core.git",
-                "reference": "df897a98dc4a5c126c6508438f12e68b22de83cb"
+                "reference": "16db3a011901d22df0f3faecf9cc74a6d368e98c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/susanBuck/e2core/zipball/df897a98dc4a5c126c6508438f12e68b22de83cb",
-                "reference": "df897a98dc4a5c126c6508438f12e68b22de83cb",
+                "url": "https://api.github.com/repos/susanBuck/e2core/zipball/16db3a011901d22df0f3faecf9cc74a6d368e98c",
+                "reference": "16db3a011901d22df0f3faecf9cc74a6d368e98c",
                 "shasum": ""
             },
             "require": {
@@ -720,7 +720,7 @@
                 }
             ],
             "description": "Practice framework for CSCI E-2",
-            "time": "2019-11-13T01:43:53+00:00"
+            "time": "2019-11-20T00:18:17+00:00"
         },
         {
             "name": "symfony/debug",

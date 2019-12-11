@@ -5,5 +5,9 @@ return [
     '/contact' => ['AppController', 'contact'],
     '/products' => ['ProductController', 'index'],
     '/product' => ['ProductController', 'show'],
-    '/about' => ['AppController', 'about']
+    '/products/save-review' => ['ProductController', 'saveReview'],
+    '/products/new' => ['AppController', 'newProduct'],
+    '/about' => ['AppController', 'about'],
+    '/practice' => ['AppController', 'practice'],
+    '/practice2' => ['AppController', 'practice2']
 ];

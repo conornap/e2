@@ -2,5 +2,6 @@
 
 return [
     '/' => ['AppController', 'index'],
-    '/round' => ['RoundController', 'index']
+    '/rounds' => ['RoundController', 'rounds'],
+    '/round' => ['RoundController', 'round']
 ];

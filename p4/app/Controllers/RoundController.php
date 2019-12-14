@@ -3,7 +3,12 @@ namespace App\Controllers;
 
 class RoundController extends Controller
 {
-    public function index(){
-        return 'Show Rounds Here Brother!';
+    public function rounds(){
+        return $this->app->view('rounds');
     }
+
+     public function round(){
+        return $this->app->view('round');
+    }
+    
 }

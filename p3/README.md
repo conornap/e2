@@ -2,7 +2,7 @@
 
 # Project 3
 + By: Conor Napier
-+ Production URL: <http://p3.conchobhar.net>
++ Production URL: <http://p3.conchobhar.me>
 
 ## Game planning
 <!-- *Share the "plain English" notes/plan for your game* -->

@@ -31,6 +31,24 @@
 </main>
 
 @yield('body')
+<footer>
+    <br>
+    <small>
+    <center>
+    <p> 
+    &#8226
+    DGMD E-2 
+    &#8226
+    Fall 2019
+    &#8226
+    Project 4
+    &#8226
+    By: Conor Napier
+    &#8226
+    </small>
+    </center>
+    <br>
+</footer>
 
 </body>
 </html>

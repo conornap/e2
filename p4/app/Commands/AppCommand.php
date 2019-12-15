@@ -14,8 +14,8 @@ class AppCommand extends Command
         $this->app->db()->createTable('p4', [
             'winner' => 'text',
             'roll' => 'int',
-            'choiceA' => 'tinyint(1)',
-            'choiceB' => 'tinyint(1)'
+            'choiceA' => 'text',
+            'choiceB' => 'text'
         ]);
         
         dump('Migration Complete');
@@ -33,6 +33,11 @@ class AppCommand extends Command
             'Player B guessed correctly. They are the Winner!'
         ];
 
+        $choices = [
+            'Even',
+            'Odd'
+        ];
+
         # Use a loop to create 10 rounds
         for ($i = 0; $i < 10; $i++) {
 
@@ -40,8 +45,8 @@ class AppCommand extends Command
         $p4 = [
             'winner' => $winners[array_rand($winners)],
             'roll' => rand(2,12),
-            'choiceA' => rand(0,1),
-            'choiceB' => rand(0,1)
+            'choiceA' => $choices[array_rand($choices)],
+            'choiceB' => $choices[array_rand($choices)],
         ];
 
         # Insert the round

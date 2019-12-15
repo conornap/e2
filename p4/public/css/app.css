@@ -1,3 +1,53 @@
+body {
+    text-align: center;
+}
+
+header {
+    margin: 20px;
+}
+
+div {
+    margin: 20px;
+}
+
+label {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
 #logo {
-    width:300px;
+    /* Actual width is 636; displaying at half-size for retina screens */
+    width: 318px;
+}
+
+#results {
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.won {
+    color: green;
+}
+
+.lost {
+    color: red;
+}
+
+ul.error {
+    list-style-type: none;
+}
+
+.cleanList {
+    list-style-type: none;
+    padding: 0;
 }

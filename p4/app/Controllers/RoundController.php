@@ -10,7 +10,16 @@ class RoundController extends Controller
     }
 
      public function round(){
-        return $this->app->view('round');
+        $roundId = $this->app->param('id');
+
+        $round = $this->app->db()->findById('p4', $roundId);
+
+        if(is_null($round)){
+            return $this->app->redirect('/rounds', ['roundNotFound' => true]);
+        }
+
+        return $this->app->view('round',['round' => $round]);
+
     }
     
 }

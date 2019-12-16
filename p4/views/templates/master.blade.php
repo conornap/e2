@@ -17,7 +17,7 @@
 
 <header>
     <center>
-    <img id='logo' src='/images/p4-logo.jpg'  alt='Dice Logo'>
+    <a href='/' style="color: #000000; text-decoration: none;"><img id='logo' src='/images/p4-logo.jpg'  alt='Dice Logo'></a>
     <h1><a href='/' style="color: #000000; text-decoration: none;">{{ $app->config('app.name') }}</a></h1>
     </center>
 </header>

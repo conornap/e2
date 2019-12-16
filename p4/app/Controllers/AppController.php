@@ -77,7 +77,7 @@ class AppController extends Controller
 
         $this->app->db()->insert('p4', $results);
 
-        $this->app->redirect('/', ['winner' => $results['winner']], ['roll' => $results['roll']]);
+        $this->app->redirect('/', ['winner' => $results['winner']]);
 
     }
 }

@@ -5,9 +5,6 @@
     {{ $app->config('app.name')}}
 @endsection
 
-
-
-
 @section('content')
     
 @if($app->old('winner') !== null)

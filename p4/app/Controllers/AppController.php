@@ -14,7 +14,6 @@ class AppController extends Controller
     public function play()
     {
         
-        //return $this->app->view('index');
 
         // Define the winner variable
         $winner = null;
@@ -61,14 +60,14 @@ class AppController extends Controller
         if ($correctA == true && $correctB == true) {
             $winner = 'Player A and B both guessed correctly. Tie Game!';
         } elseif ($correctA == false && $correctB == false) {
-            $winner = 'Player A and B both guessed incorrectly. Its a Draw!';
+            $winner = 'Player A and B both guessed incorrectly. It is a Draw!';
         } elseif ($correctA == true && $correctB == false) {
             $winner = 'Player A guessed correctly. They are the Winner!';
         } else {
             $winner = 'Player B guessed correctly. They are the Winner!';
         }
 
-        // Define results to be used by index.php
+        // Define results to be sent to DB
         $results = [
             'winner' => $winner,
             'roll' => $roll,
@@ -78,17 +77,8 @@ class AppController extends Controller
 
         $this->app->db()->insert('p4', $results);
 
-        return $this->app->redirect('/results');
-    }
+        $this->app->redirect('/', ['winner' => $results['winner']], ['roll' => $results['roll']]);
 
-    public function results()
-    {
-        $resultId = $this->app->db()->run('SELECT * FROM p4 ORDER BY id DESC LIMIT 1')->fetch();
-
-        if(is_null($resultId)){
-            return $this->app->redirect('/rounds', ['resultNotFound' => true]);
-        }
-
-        return $this->app->view('results',['result' => $resultId]);
     }
 }
+

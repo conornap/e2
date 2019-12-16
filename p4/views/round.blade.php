@@ -16,7 +16,7 @@
 <br>
 </ul>
 <p>
-<strong><a href='/'> Play Again!</a></strong>
+<strong><a href='/'style="color: #000000; text-decoration: none;">&larr; Play Again!</a></strong>
 <p>
-<a href='/rounds'>&larr; Round History</a>
+<a href='/rounds'style="color: #000000; text-decoration: none;"> Round History</a>
 @endsection

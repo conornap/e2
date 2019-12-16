@@ -8,7 +8,7 @@
     <h1>Evens or Odds Dice Game</h1>
     <h2>Round # {{ $round['id']}}</h2>
     <br>
-</ul>
+<ul>
 <li> Player A picked {{ $round['choiceA']}}</li>
 <li> Player B picked {{ $round['choiceB']}}</li>
 <li> The dice roll totaled {{ $round['roll']}}</li>

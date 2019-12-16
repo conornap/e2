@@ -20,7 +20,7 @@
     <h1>Evens or Odds Dice Game</h1>
 
     <h2>Mechanics</h2>
-    </ul>
+    <ul>
         <li>Pick Evens or Odds.</li>
         <li>We'll then each roll a dice and add the results together</li>
         <li>A tie is declared if we both guess correctly.</li>
@@ -29,7 +29,7 @@
     </ul>
     <center>
         <br>
-        <h2>Choose Evens of Odds Below!</h2>
+        <h2>Choose Evens or Odds Below!</h2>
         <br>
     <form  method='POST' action='/play'>
         <label for='Even'> Evens</lable>&#160&#160<input type='radio' value='Even' id='Even' name='choice' checked>

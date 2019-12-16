@@ -14,7 +14,9 @@ class AppController extends Controller
     public function play()
     {
         
-
+        $this->app->validate([
+            'choice' => 'required' 
+        ]);
         // Define the winner variable
         $winner = null;
         // Get the choice made by the user fro mthe form
